@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Color</title>
+    <style>
+
+    button{
+            background-color: transparent;
+            padding: 20px;
+            border: 1px solid;
+            font-size: 2rem;
+    }
+    button:hover{
+            background-color: antiquewhite;    
+    }
+    </style>
+</head>
+<body>
+    <button>Click me!</button>
+    <script>
+        const htmlBody = document.querySelector('body');
+        const randomClickFunction = function(){
+            const colors = ["yellow", "blue", "green", "black", "grey", "white", "red", "purple", "orange"];
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            const randomColor = colors[randomIndex];
+
+            htmlBody.style.backgroundColor = randomColor;
+
+            console.log ('Color set to ' + randomColor);
+
+        }
+        randomClickFunction()
+        htmlBody.onclick = randomClickFunction;
+    </script>
+</body>
+</html>
