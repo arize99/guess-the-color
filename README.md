@@ -6,5 +6,5 @@ A simple JavaScript guess-the-color game.
 <br/>
 The first person would guess the color and the second would click the button. If the first person guessed correctly, he would guess again until an incorrect guess which would then mean a change in the positions of the guessing game. 
 
-<br />
+<br /><br /><br />
 - Solution URL: [Guess the color game] (https://arize99.github.io/guess-the-color/)
